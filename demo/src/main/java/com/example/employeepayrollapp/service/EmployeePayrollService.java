@@ -1,7 +1,6 @@
-package com.abhinav.employeepayroll.service;
+package com.example.employeepayrollapp.service;
 import com.example.employeepayrollapp.dto.EmployeePayrollDTO;
 import com.example.employeepayrollapp.model.EmployeePayrollData;
-import com.example.employeepayrollapp.service.IEmployeePayrollService;
 
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;

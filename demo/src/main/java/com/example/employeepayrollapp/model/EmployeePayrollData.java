@@ -1,5 +1,6 @@
 package com.example.employeepayrollapp.model;
-
+import lombok.Data;
+@Data
 public class EmployeePayrollData {
 	private int id;
     private String name;
