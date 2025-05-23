@@ -1,12 +1,13 @@
 package com.example.employeepayrollapp.service;
 import com.example.employeepayrollapp.dto.EmployeePayrollDTO;
 import com.example.employeepayrollapp.model.EmployeePayrollData;
-
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 @Service
+@Slf4j
 public class EmployeePayrollService implements IEmployeePayrollService {
 	private final List<EmployeePayrollData> employeeList = new ArrayList<>();
     private final AtomicInteger idCounter = new AtomicInteger(1);
