@@ -3,6 +3,9 @@ package com.example.employeepayrollapp.controller;
 import com.example.employeepayrollapp.dto.EmployeePayrollDTO;
 import com.example.employeepayrollapp.model.EmployeePayrollData;
 import com.example.employeepayrollapp.service.IEmployeePayrollService;
+
+import jakarta.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,7 +29,7 @@ public class EmployeePayrollController {
     }
 
     @PostMapping("/create")
-    public EmployeePayrollData create(@RequestBody EmployeePayrollDTO dto) {
+    public EmployeePayrollData create(@Valid @RequestBody EmployeePayrollDTO dto) {
         return payrollService.createEmployeePayrollData(dto);
     }
 
